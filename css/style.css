@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 2fr 1fr 2fr 150px;
+  grid-template-areas:
+    "  header   header  "
+    "section-1 section-1"
+    "section-2 section-2"
+    "section-3 section-3"
+    "section-4 section 5"
+    "  footer   footer ";
+}
+
+header,
+.web-app-dev,
+.services,
+.promo-block,
+.contacts,
+.about-us,
+footer {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* HEADER  */
+header {
+  grid-area: header;
+}
+
+/* SECTION 1 */
+.web-app-dev {
+  grid-area: section-1;
+}
+
+/* SECTION 2 */
+.services {
+  grid-area: section-2;
+}
+
+/* SECTION 3 */
+.promo-block {
+  grid-area: section-3;
+}
+
+/* SECTION 4 */
+.contacts {
+  grid-area: section-4;
+}
+
+/* SECTION 5 */
+.about-us {
+  grid-area: section-5;
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+}
