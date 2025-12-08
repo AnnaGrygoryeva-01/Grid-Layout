@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+.grid-wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -36,7 +36,7 @@ header {
   align-content: center;
   justify-items: center;
   align-items: center;
-  height: 450px;
+  min-height: 450px;
   padding: 20px;
   background-color: #333;
   color: white;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .web-app-dev .content-width {
-  width: 90%;
+  width: 80%;
   max-width: 1100px;
 }
 
@@ -226,7 +226,7 @@ footer {
 
 /* Responsive Grid */
 @media screen and (max-width: 700px) {
-  body {
+  .grid-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
